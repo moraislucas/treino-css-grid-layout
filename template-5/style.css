@@ -35,6 +35,7 @@ ul {
 
 .dias-semana li {
     font-weight: bold;
+    border: none;
 }
 
 li {
@@ -56,4 +57,3 @@ ul .proximo-mes {
     color: gray;
     font-weight: normal;
 }
-
