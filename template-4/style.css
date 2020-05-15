@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #4e4e4e;
+    box-sizing: border-box;
+}
+
+h1,
+h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 20px;
+    color: black;
+}
+
+h2 {
+    text-align: initial;
+    margin-bottom: 20px;
+}
+
+p {
+    font-weight: normal;
+    line-height: 1.4rem;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.estrutura>* {
+    border-radius: 5px;
+    padding: 30px;
+}
+
+.estrutura {
+    max-width: 960px;
+    padding: 20px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: [full-start] minmax(1em, 1fr) [main-start] minmax(0, 56em) [main-end] minmax(1em, 1fr) [full-end];
+    gap: 20px;
+}
+
+section {
+    grid-column: main;
+}
+
+figure {
+    grid-column: full;
+    text-align: center;
+}
+
+/* Responsivo */
+@media(max-width: 780px) {
+    .estrutura {
+        width: 100%;
+    }
+
+    .estrutura>* {
+        padding: 0;
+    }
+}
