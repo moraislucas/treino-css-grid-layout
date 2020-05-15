@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: tomato;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.estrutura>* {
+    border-radius: 5px;
+    background: rgba(255, 99, 71, 0.2);
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.estrutura {
+    max-width: 600px;
+    padding: 20px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+/* Responsivo */
+@media(max-width: 780px) {
+    .estrutura {
+        width: 100%;
+        grid-template-columns: minmax(300px, 1fr);
+    }
+}
