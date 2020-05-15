@@ -55,7 +55,6 @@ h1 {
     grid-area: content;
 }
 
-
 .footer {
     grid-area: footer;
 }
@@ -67,9 +66,8 @@ h1 {
         grid-template-columns: 100%;
         grid-template-areas:
             "header"
-            "sidenav"
             "content"
-            "anuncios"
+            "sidenav"
             "footer"
         ;
     }
