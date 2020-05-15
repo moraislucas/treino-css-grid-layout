@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.1rem;
+    color: #4e4e4e;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+h1 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+.estrutura {
+    max-width: 500px;
+    padding: 20px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+ul {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 7px;
+}
+
+.dias-semana li {
+    font-weight: bold;
+}
+
+li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    height: 50px;
+    border: 1px solid silver;
+}
+
+.dias-mes li {
+    color: black;
+    font-weight: bold;
+}
+
+ul .mes-passado,
+ul .proximo-mes {
+    color: gray;
+    font-weight: normal;
+}
+
